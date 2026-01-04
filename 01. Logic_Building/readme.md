@@ -4,20 +4,20 @@ This directory contains a set of fundamental flowchart diagrams designed to expl
 
 ## Diagrams Overview
 
-1. **Max of 3 Numbers**  
+1. **Max of 2 Numbers**  
+   Represents the logical comparison of two numbers to determine the greatest value among them using conditional checks.
+
+2. **Max of 3 Numbers**  
    Represents the logical comparison of three numbers to determine the greatest value among them using conditional checks.
 
-2. **Max of 4 Numbers**  
+3. **Max of 4 Numbers**  
    Illustrates the decision-making process required to find the maximum value from four given numbers efficiently.
 
-3. **Sum of First N Numbers**  
+4. **Sum of First N Numbers**  
    Demonstrates the iterative calculation of the sum of natural numbers from 1 to a given number `n`.
 
-4. **Factorial of a Number**  
+5. **Factorial of a Number**  
    Shows the step-by-step multiplication process to compute the factorial of a single number.
-
-5. **Factorials Till Nth Numbers**  
-   Depicts the repeated calculation of factorial values starting from 1 up to a specified number `n`.
 
 6. **series: 1! −3! 5! −7! 9! (n = 5)**  
    Explains the generation of an alternating factorial series using odd numbers with positives and negatives.
