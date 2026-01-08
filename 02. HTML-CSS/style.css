@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #ECFDF5;
+}
+
+.left {
+    width: 70%;
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #059669, #34D399);
+}
+
+.image {
+    width: 25vmin;
+    height: 25vmin;
+    border-radius: 50%;
+    background-image: url("./Assets/logo.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 5vh;
+}
+
+.desc {
+    font-size:  1.7rem   ;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-align: justify;
+    color: white;
+    max-width: 80%;
+}
+
+.right {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer {
+    width: 85%;
+    border-radius: 3%;
+    overflow: hidden;
+    background: #FFFFFF;
+    box-shadow: 1vw 1vh 3vw rgb(0,0,0,0.2);
+}
+
+.tabs {
+    display: flex;
+    background-color: #D1FAE5;
+}
+
+.tabs .tab {
+    flex: 1;
+    text-align: center;
+    padding: 2.5vh 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #064E3B;
+}
+
+#loginTab:checked ~ .tabs label[for="loginTab"],
+#registerTab:checked ~ .tabs label[for="registerTab"] {
+    background-color: #059669;
+    color: white;
+}
+
+.form {
+    display: none;
+    flex-direction: column;
+    gap: 1.5vh;
+    padding: 2.2vw;
+}
+
+.form h2 {
+    text-align: center;
+    color: #064E3B;
+    margin-bottom: 1rem;
+}
+
+.form input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border-radius: 1vmin;
+    border: 0.23vh solid #A7F3D0;
+    outline: none;
+}
+
+.form input:focus {
+    border-color: #059669;
+}
+
+.form a {
+    font-size: 1.1rem;
+    color: #059669;
+    text-decoration: none;
+    align-self: flex-start;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    background: linear-gradient(135deg, #059669, #34D399);
+    color: white;
+    border: none;
+    border-radius: 1vmin;
+    cursor: pointer;
+    margin-top: 0.4rem;
+}
+
+.submitBtn:active {
+    transform: translateY(0);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#loginTab:checked ~ .loginForm {
+    display: flex;
+}
+
+#registerTab:checked ~ .registerForm {
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        padding: 20vh 10vw;
+        min-height: 40vh;
+        order: 1;
+    }
+
+    .right {
+        width: 100%;
+        padding: 10vh 5vw;
+        order: 2;
+    }
+
+    .image {
+        width: 25vmin;
+        height: 25vmin;
+        margin-bottom: 1rem;
+    }
+
+    .desc {
+        font-size: 1.5rem;
+        text-align: justify;
+        max-width: 100%;
+        line-height: 1.6;
+    }
+
+    .formContainer {
+        width: 90%;
+    }
+
+    .tabs .tab {
+        font-size: 1.3rem;
+        padding: 2vh 0;
+    }
+
+    .form {
+        padding: 3vh 5vw;
+        gap: 1vh;
+    }
+
+    .form h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .form input {
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
+
+    .form a {
+        font-size: 1rem;
+    }
+
+    .submitBtn {
+        padding: 1.5vh;
+        font-size: 1.1rem;
+    }
+}

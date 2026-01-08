@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="left">
+            <div class="image"></div>
+            <div class="desc">
+                <p>The logo features three flowing arcs joining to create a unified circle.
+                Its smooth gradients reflect motion, harmony, and continuous progress.
+                Perfect for businesses focused on innovation or holistic services.</p>
+            </div>
+        </section>
+        <section class="right">
+            <div class="formContainer">
+                
+                <input type="radio" name="tab" id="loginTab" checked>
+                <input type="radio" name="tab" id="registerTab">
+                <div class="tabs">
+                    <label for="loginTab" class="tab">Login</label>
+                    <label for="registerTab" class="tab">Register</label>
+                </div>
+
+                <form class="form loginForm" action="#">
+                    <h2>Login</h2>
+                    <input type="text" title="Username" placeholder="Username"  required>
+                    <input type="password" title="Password" placeholder="Password" required>
+                    <a href="#FGPass">Forget password</a>
+                    <button class="submitBtn">Login</button>
+                </form>
+
+                <form class="form registerForm" action="#">
+                    <h2>Register</h2>
+                    <input type="text" title="Username" placeholder="Username" required>
+                    <input type="email" title="Email" placeholder="Email" required>
+                    <input type="password" title="Password" placeholder="Password" required>
+                    <input type="password" title="Confirm Password" placeholder="Confirm Password" required>
+                    <a href="#login">Already have an account</a>
+                    <button class="submitBtn" onsubmit="">Register</button>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
