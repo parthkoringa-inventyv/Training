@@ -28,6 +28,27 @@ This task demonstrates array manipulation across multiple functions with promise
 
 ---
 
+## Task 2: Pattern Printing with Constraints
+
+### Description
+This task demonstrates pattern printing with strict coding constraints. The implementation creates a symmetric numeric pattern where each position displays the minimum distance from any edge of the grid.
+
+**Pattern Structure** (for n=5):
+```
+1 1 1 1 1 
+1 2 2 2 1
+1 2 3 2 1
+1 2 2 2 1
+1 1 1 1 1
+```
+
+**Implementation Constraints**:
+1. **Maximum 3 variables allowed**: Only three variables can be declared in the entire program
+2. **No built-in functions**: Cannot use any JavaScript built-in methods
+3. **Maximum 7 lines of code**: The entire solution must fit within 7 lines 
+
+---
+
 ## Task 3: Array Manipulation with Symbols and Promise Validation
 
 ### Description
