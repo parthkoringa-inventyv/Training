@@ -26,7 +26,6 @@ This task demonstrates array manipulation across multiple functions with promise
    - **Resolution condition**: Promise resolves if the sum is greater than 35
    - **Rejection condition**: Promise rejects if the sum is 35 or less
 
----
 
 ## Task 2: Pattern Printing with Constraints
 
@@ -46,8 +45,6 @@ This task demonstrates pattern printing with strict coding constraints. The impl
 1. **Maximum 3 variables allowed**: Only three variables can be declared in the entire program
 2. **No built-in functions**: Cannot use any JavaScript built-in methods
 3. **Maximum 7 lines of code**: The entire solution must fit within 7 lines 
-
----
 
 ## Task 3: Array Manipulation with Symbols and Promise Validation
 
@@ -74,6 +71,8 @@ This task is similar to Task 1 but incorporates JavaScript Symbols for storing a
    - The promise calculates the sum of all array elements
    - **Resolution condition**: Promise resolves if the sum is greater than 35
    - **Rejection condition**: Promise rejects if the sum is 35 or less
+
+---
 
 # Exercism JavaScript Track
 
