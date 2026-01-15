@@ -74,3 +74,21 @@ This task is similar to Task 1 but incorporates JavaScript Symbols for storing a
    - The promise calculates the sum of all array elements
    - **Resolution condition**: Promise resolves if the sum is greater than 35
    - **Rejection condition**: Promise rejects if the sum is 35 or less
+
+# Exercism JavaScript Track
+
+### Description
+This directory also includes my work from the **Exercism JavaScript Track**, which I completed in **Learning Mode**. The **`Exercism_Javascript_Track/`** folder contains all the exercises I completed as part of the JavaScript Learning Mode. Each file represents a solved exercise with proper implementation based on Exercism’s guidelines.
+
+### What I Learned
+The JavaScript track helped me gain practical experience with all concepts like:
+
+- JavaScript variables, data types, and operators  
+- Functions and scope  
+- Conditionals and loops  
+- Arrays and objects  
+- String manipulation  
+- Error handling  
+- Modules and exports  
+- promises
+
