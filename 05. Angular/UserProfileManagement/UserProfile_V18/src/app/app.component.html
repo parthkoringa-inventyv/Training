@@ -1,0 +1,19 @@
+@if (eventRecieved) {
+  <div #eventReciever>
+    <mat-card class="event-card">
+      <mat-card-content>
+        <p>User name: {{ eventRecieved.username }}</p>
+        <p>New status: {{ eventRecieved.status }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+}
+
+<div class="container">
+  @for(user of (userData$ | async); track user.username) {
+    <app-user-card 
+      [user]="user" 
+      (changeBorder)="statusToggle($event)">
+    </app-user-card> 
+  } 
+</div>

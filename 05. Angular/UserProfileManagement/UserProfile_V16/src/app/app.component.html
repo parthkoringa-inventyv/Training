@@ -1,0 +1,15 @@
+<div *ngIf="eventRecieved !== null" #eventReciever>
+  <mat-card class="event-card">
+    <mat-card-content>
+      <p>User name: {{ eventRecieved.username }}</p>
+      <p>New status: {{ eventRecieved.status }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
+<div class="container">
+  <app-user-card 
+    *ngFor="let user of userData$ | async" 
+    [user]="user" 
+    (changeBorder)="statusToggle($event)" #userCard>
+  </app-user-card> 
+</div>
