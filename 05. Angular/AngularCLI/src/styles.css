@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: black;
+    color: rgb(238, 244, 238);
+    font-weight: bold;
+    font-size: larger;
+    font-family: monospace;
+}

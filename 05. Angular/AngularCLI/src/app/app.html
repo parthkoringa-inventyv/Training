@@ -1,0 +1,25 @@
+<div class="terminalContainer" #terminalContainer>
+  <div class="output">
+    @for(output of outputs ; track $index){
+        <pre>{{ output }}</pre>
+    }  
+  </div>
+  <label for="cmdInput">$ </label>
+  <input type="text" class="input" [(ngModel)]="cmdInput" id="cmdInput" (keyup.enter)="submit()" autofocus/>
+</div>
+
+<!-- supported commands display -->
+<div class="commands-panel">
+  <h3>Supported Commands</h3>
+  <div class="command-list">
+      <p>ng new my-app</p>
+      <p>cd my-app</p>
+      <p>cd childDir</p>
+      <p>ng generate component my-comp</p>
+      <p>ng g c my-comp</p>
+      <p>ng build</p>
+      <p>ng serve</p>
+      <p>ng test</p>
+      <p>cls</p>
+  </div>
+</div>
