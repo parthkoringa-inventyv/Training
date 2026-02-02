@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    width: 97%;
+    padding: 0 1rem;
+}
+.productListContainer{
+    flex: 2.5;
+}
+.cartContainer{
+    flex: 2;
+}
