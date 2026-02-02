@@ -1,0 +1,47 @@
+<div class="cart-container">
+    <h2 class="cart-heading">Cart</h2>
+    @if(cart.items.length !== 0) {
+        
+    <mat-card class="cart-card">
+        <mat-card-content class="cart-card-content">
+        <div class="cart-items-container">
+            @for(item of cart.items; track $index) {
+            <mat-card class="cart-item">
+                <mat-card-content class="item-content">
+                    <div class="item-details">
+                        <h4 class="item-name">{{item.product.name}}</h4>
+                        <p class="item-quantity">Quantity: {{item.quantity}}</p>
+                        <p class="item-price">Total: ₹{{item.finalPrice}}</p>
+                    </div>
+                    <div class="item-actions">
+                        <button mat-raised-button color="primary" (click)="increaseQuantity(item.product)">
+                            <mat-icon>add</mat-icon>
+                        </button>
+                        <button mat-raised-button color="accent" (click)="decreaseQuantity(item.product)">
+                            <mat-icon>remove</mat-icon>
+                        </button>
+                        <button mat-raised-button color="warn" (click)="removeItem(item.product)" class="remove-item-btn">
+                            <mat-icon>delete</mat-icon>
+                        </button>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+            }
+        </div>
+        </mat-card-content>
+        
+        <mat-card-actions class="cart-footer">
+        <div class="footer-content">
+            <h3 class="cart-total">Total: ₹{{cart.total}}</h3>
+            <button mat-raised-button color="warn" (click)="clearCart()" class="clear-btn">
+            <mat-icon>delete</mat-icon>
+            Clear Cart
+            </button>
+        </div>
+        </mat-card-actions>
+    </mat-card>
+    } 
+    @else {
+        <p style="text-align: center; color: #999; font-size: 2rem; margin-top: 2rem;">Your cart is empty</p>
+    }
+</div>
