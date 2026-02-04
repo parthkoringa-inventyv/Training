@@ -1,0 +1,26 @@
+<mat-toolbar color="primary" class="navbar">
+  <span class="app-title">My App</span>
+  
+  <span class="spacer"></span>
+  
+  <nav class="nav-links">
+    <a mat-button routerLink="/home" routerLinkActive="active-link">
+      <mat-icon>home</mat-icon>
+      Home
+    </a>
+    
+    <a mat-button routerLink="/user-profile" routerLinkActive="active-link">
+      <mat-icon>person</mat-icon>
+      Profile
+    </a>
+    
+    <button mat-raised-button color="accent" (click)="logout()">
+      <mat-icon>logout</mat-icon>
+      Logout
+    </button>
+  </nav>
+</mat-toolbar>
+
+<div class="content">
+  <router-outlet />
+</div>

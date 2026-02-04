@@ -1,0 +1,54 @@
+<div class="login-container">
+  <mat-card class="login-card">
+    <mat-card-header>
+      <mat-card-title>Welcome Back</mat-card-title>
+      <mat-card-subtitle>Please login to continue</mat-card-subtitle>
+    </mat-card-header>
+    
+    <mat-card-content>
+      <form class="login-form">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Email</mat-label>
+          <input 
+            matInput 
+            type="email" 
+            placeholder="Enter your email"
+            [(ngModel)]="email"
+            name="email"
+            required
+            autofocus>
+          <mat-icon matPrefix>email</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Password</mat-label>
+          <input 
+            matInput 
+            [type]="hidePassword ? 'password' : 'text'"
+            placeholder="Enter your password"
+            [(ngModel)]="password"
+            name="password"
+            required>
+          <mat-icon matPrefix>lock</mat-icon>
+          <button 
+            mat-icon-button 
+            matSuffix 
+            type="button"
+            (click)="hidePassword = !hidePassword">
+            <mat-icon>{{hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+
+        <button 
+          mat-raised-button 
+          color="primary" 
+          class="login-button full-width"
+          type="submit" 
+          (click)="login()">
+          <mat-icon>login</mat-icon>
+          Login
+        </button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
